@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "version": "1.0",
+  "description": "Track productivity, block distracting sites, and generate reports.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons8-chrome-100.png",
+      "48": "icons8-download-24.png",
+      "128": "icons8-single-page-mode-50.png"
+    }
+  },
+  "options_page": "options.html"
+}
